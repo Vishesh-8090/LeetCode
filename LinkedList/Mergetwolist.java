@@ -13,7 +13,7 @@ public class Mergetwolist {
             l2.display();
 
             ListNode res = new ListNode();
-            System.out.println(mergeTwoLists(l1.head, l2.head, res));
+            System.out.println(mergeTwoLists(l1.getHead(), l2.getHead(), res));
             res.display();
         }
 
@@ -21,7 +21,7 @@ public class Mergetwolist {
             ListNode k = res;
 
             while (list1 != null && list2 != null) {
-                if (list1.val <= list2.val) {
+                if (list1.getVal() <= list2.getVal()) {
                     k.next = list1;
                     list1 = list1.next;
                 } else {
