@@ -1,6 +1,6 @@
-package LinkedList;
+// 19. Remove Nth Node From End of List
 
-import java.util.List;
+package LinkedList;
 
 public class Remove_Nth_Node {
     public static ListNode removeNthFromEnd(ListNode head, int n) {
