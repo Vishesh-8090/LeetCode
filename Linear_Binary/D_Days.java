@@ -1,4 +1,4 @@
-package linear_Binary;
+package Linear_Binary;
 
 public class D_Days {
     public static void main(String[] args) {

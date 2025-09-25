@@ -1,4 +1,4 @@
-package linear_Binary;
+package Linear_Binary;
 
 public class KoKo {
     public static void main(String[] args) {

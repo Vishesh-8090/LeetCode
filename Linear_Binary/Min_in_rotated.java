@@ -1,4 +1,4 @@
-package linear_Binary;
+package Linear_Binary;
 
 public class Min_in_rotated {
     public static void main(String[] args) {
