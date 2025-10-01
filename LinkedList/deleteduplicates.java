@@ -10,9 +10,9 @@ public class deleteduplicates {
         ll.insertf(2);
         ll.insertf(1);
         ll.insertf(1);
-        ll.display();
+        ll.display(ll.getHead());
         deleteDup(ll.getHead());
-        ll.display();
+        ll.display(ll.getHead());
     }
     public static ListNode deleteDup(ListNode head) {
         if (head == null || head.next == null) return head;

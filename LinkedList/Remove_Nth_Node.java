@@ -47,8 +47,8 @@ public class Remove_Nth_Node {
         ll.insertf(2);
         ll.insertf(1);
 
-        ll.display();
+        ll.display(ll.getHead());
         removeNthFromEnd(ll.getHead(), 3);
-        ll.display();
+        ll.display(ll.getHead());
     }
 }

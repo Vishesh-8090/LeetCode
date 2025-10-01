@@ -11,7 +11,7 @@ public class Partition {
         ll.insertf(1);
 
         ListNode l1 = partition(ll.getHead(),3);
-        ll.display();
+        ll.display(ll.getHead());
     }
     public static ListNode partition(ListNode head, int x) {
         ListNode small = new ListNode();

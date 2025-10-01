@@ -11,7 +11,7 @@ public class Odd_Even {
         ll.insertf(1);
 
         ListNode l1 = oddEvenList(ll.getHead());
-        l1.display();
+        l1.display(l1.getHead());
     }
     public static ListNode oddEvenList(ListNode head) {
         if(head == null || head.next == null || head.next.next == null) return head;

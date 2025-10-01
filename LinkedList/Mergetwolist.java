@@ -9,12 +9,11 @@ public class Mergetwolist {
             l2.insertf(7);
             l2.insertf(5);
 
-            l1.display();
-            l2.display();
+            l1.display(l1.getHead());
+            l2.display(l2.getHead());
 
-            ListNode res = new ListNode();
-            System.out.println(mergeTwoLists(l1.getHead(), l2.getHead(), res));
-            res.display();
+            ListNode res = mergeTwoLists(l1.getHead(), l2.getHead(), new ListNode());
+            res.display(res);
         }
 
         public static ListNode mergeTwoLists(ListNode list1, ListNode list2, ListNode res) {

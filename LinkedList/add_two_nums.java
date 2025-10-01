@@ -14,7 +14,7 @@ public class add_two_nums {
 //        l2.insertf(5);
 
         addTwoNumbers(l1.getHead(), l2.getHead());
-        l2.display();
+        l2.display(l2.getHead());
 
     }
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {

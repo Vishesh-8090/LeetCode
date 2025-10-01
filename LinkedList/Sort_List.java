@@ -8,10 +8,10 @@ public class Sort_List {
         ll.insertf(3);
         ll.insertf(-1);
         ll.insertf(5);
-        ll.display();
+        ll.display(ll.getHead());
 
         ListNode l2 = sortList(ll.getHead());
-        l2.display();
+        l2.display(ll.getHead());
     }
     public static ListNode sortList(ListNode head) {
         if (head == null || head.next == null) return head;

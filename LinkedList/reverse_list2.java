@@ -8,10 +8,10 @@ public class reverse_list2 {
         ll.insertf(3);
         ll.insertf(2);
         ll.insertf(1);
-        ll.display();
+        ll.display(ll.getHead());
 
         ListNode l2 = reverseBetween(ll.getHead(), 3, 4);
-        l2.display();
+        l2.display(l2.getHead());
     }
     public static ListNode reverseBetween(ListNode head, int left, int right) {
         if(head == null || head.next == null) return head;

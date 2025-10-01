@@ -8,10 +8,10 @@ public class Reverse_in_K {
         ll.insertf(3);
         ll.insertf(2);
         ll.insertf(1);
-        ll.display();
+        ll.display(ll.getHead());
 
         ListNode l2 = reverseKGroup(ll.getHead(), 2);
-        l2.display();
+        l2.display(l2.getHead());
     }
     public static ListNode reverseKGroup(ListNode head, int k) {
         if(head == null || head.next == null) return head;

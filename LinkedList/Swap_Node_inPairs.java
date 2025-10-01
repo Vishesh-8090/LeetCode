@@ -7,10 +7,10 @@ public class Swap_Node_inPairs {
         ll.insertf(3);
         ll.insertf(2);
         ll.insertf(1);
-        ll.display();
+        ll.display(ll.getHead());
 
         ListNode l2 = swapPairs(ll.getHead());
-        l2.display();
+        l2.display(l2.getHead());
     }
     public static ListNode swapPairs(ListNode head) {
         if(head == null || head.next == null){
