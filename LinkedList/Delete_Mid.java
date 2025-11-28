@@ -10,6 +10,7 @@ public class Delete_Mid {
         ll.insertf(4);
         ll.insertf(3);
         ll.insertf(1);
+
         ll.display(ll.getHead());
 
         ListNode l2 = deleteMiddle(ll.getHead());
@@ -25,22 +26,16 @@ public class Delete_Mid {
             return head;
         }
 
-        int mid = size(head)/2;
-        ListNode temp = head;
+        ListNode slow = head;
+        ListNode fast = head;
         ListNode prev = null;
-        for(int i=0; i<mid; i++){
-            prev = temp;
-            temp = temp.next;
+
+        while(fast != null && fast.next != null){
+            prev = slow;
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        prev.next = temp.next;
+        prev.next = prev.next.next;
         return head;
-    }
-    public static int size(ListNode head){
-        int len = 0;
-        while(head != null){
-            head = head.next;
-            len++;
-        }
-        return len;
     }
 }
